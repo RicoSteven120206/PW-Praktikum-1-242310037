@@ -1,0 +1,101 @@
+<!-- Latihan 7 - Latihan Form -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 7</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        .wrap-content-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .wrap-content {
+            max-width: 400px;
+        }
+
+        .radio-btn {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+        
+        .radio-btn-gender {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .btn-end {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .lbl-in {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn-sr {
+            min-width: 150px;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="wrap-content">
+        <form action="" class="wrap-content-form">
+            <div class="lbl-in">
+                <label for="npm">Input your NPM</label>
+                <input type="text" name="npm" id="npm">
+            </div>
+            <div class="lbl-in">
+                <label for="fname">Input your Fullname</label>
+                <input type="text" name="fname" id="fname">
+            </div>
+            <div class="lbl-in">
+                <label for="email">Input your Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="lbl-in">
+                <label for="password">Input your Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="lbl-in">
+                <label for="placebirth">Input your Place Birth</label>
+                <input type="text" name="placebirth" id="placebirth">
+            </div>
+            <div class="lbl-in">
+                <label for="birthdate">Input your Birthdate</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+            <div>
+                <label for="">Input your Gender</label>
+                <div class="radio-btn">
+                    <div class="radio-btn-gender">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-btn-gender">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="lbl-in">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" rows="10" cols="30" placeholder="Input your Address"></textarea>
+            </div>
+            <div class="btn-end">
+                <button type="submit" class="btn-sr">Save</button>
+                <button type="reset" class="btn-sr">Clear</button>
+            </div>
+        </form>
+    </div>
+ </body>
+ </html>

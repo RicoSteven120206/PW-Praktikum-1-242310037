@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 1</title>
+    <link rel="icon" href="./img/anton jadi presiden.png">
+    <style>
+        body {
+            background-color: blanchedalmond;
+            justify-items: center;
+        }
+
+        h1 {
+            color: yellow;
+            font: 600;
+        }
+
+        .p1 {
+            color: pink;
+            font: 600;
+        }
+
+        #p2 {
+            color: red;
+            font: 900;
+        }
+
+        #A1 {
+            color: blue;
+        }
+
+        #A2 {
+            color: blueviolet;
+        }
+
+        #demo {
+            color: blue;
+            font: 900;
+            font-family: sans-serif;
+        }
+
+        .tabless {
+            border-collapse: collapse;
+        }
+
+        .content-1 {
+            justify-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Pertemuan 1</h1>
+    <p class="p1">Ini adalah pertemuan 1</p>
+    <p id="p2">kita akan membahas mengenai html</p>
+    <div>
+        <a href="#A1">Daftar Minuman</h1> <br>
+        <a href="#A2">Daftar Makanan</h1>
+    </div>
+    <div class="content-1">
+        <p id="demo"></p>
+        <p>Lorem ipsum dolor, sit amet <b>consectetur</b> adipisicing elit. Magnam <u>ipsam sunt</u> asperiores ratione corrupti <sup>voluptas</sup> optio <sub>reiciendis</sub> iste ullam et! Eligendi iusto harum quia a doloremque id sint repudiandae? Et!</p>
+        <br>
+
+        <img src="./img/anton jadi presiden.png" alt="Foto Presiden Anton" width="200px" height="300px">
+
+        <h1>Daftar Tugas</h1>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+
+        <h1>Daftar tugas</h1>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ol>
+
+        <h2>Kutipan Pendek</h2>
+        <p>menurut anton, <q>html adalah singkatan dari text awkwok</q></p>
+
+        <h1>Klik untuk masuk ke website LMS IBIK</h1>
+        <a href="https://lms.ibik.ac.id/login/index.php" target="_blank">Website LMS IBIK</a> <br>
+        <a href="https://lms.ibik.ac.id/login/index.php" target="_self">Website LMS IBIK</a> <br>
+        <a href="https://lms.ibik.ac.id/login/index.php" target="_parent">Website LMS IBIK</a> <br>
+        <a href="https://lms.ibik.ac.id/login/index.php" target="_top">Website LMS IBIK</a> <br>
+    </div>
+
+    <h1 id="A1">Daftar Minuman</h1>
+    <ul>
+        <li>Coffe</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Orange</li>
+        <li>Random</li>
+        <li>Coffe</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Orange</li>
+        <li>Random</li>
+        <li>Coffe</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Orange</li>
+        <li>Random</li>
+    </ul>
+    <h1 id="A2">Daftar Makanan</h1>
+    <ul>
+        <li>Nasgor</li>
+        <li>Mie Goreng</li>
+        <li>Kwetiaw</li>
+        <li>Bakso</li>
+        <li>Mie Ayam</li>
+        <li>Nasgor</li>
+        <li>Mie Goreng</li>
+        <li>Kwetiaw</li>
+        <li>Bakso</li>
+        <li>Mie Ayam</li>
+        <li>Nasgor</li>
+        <li>Mie Goreng</li>
+        <li>Kwetiaw</li>
+        <li>Bakso</li>
+        <li>Mie Ayam</li>
+    </ul>
+
+    <table border="1" class="tabless">
+        <th>Nama</th>
+        <th>Umur</th>
+        <th>Kelas</th>
+        <tr>
+            <td>Anton Kecap</td>
+            <td>30 Tahun</td>
+            <td>TI-24-PA</td>  
+        </tr>
+        <tr>
+            <td>Daffa Mufid</td>
+            <td>19 Tahun</td>
+            <td>TI-24-PA</td>  
+        </tr>
+        <tr>
+            <td>Sudrajat</td>
+            <td>17 Tahun</td>
+            <td>TI-24-PA</td>  
+        </tr>
+        <tr>
+            <td>William Obrient</td>
+            <td>36 Tahun</td>
+            <td>TI-24-PA</td>  
+        </tr>
+    </table>
+    <br>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="frame" name="fname"> <br> <br>
+        <label for="fname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+        <br> <br>
+        <button type="button">Button</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <br> <br>
+        <textarea name="" id="" cols="30"></textarea>
+        <br> <br>
+        <label for="umur">umur</label>
+        <input type="number" name="umur" id="umur">
+        <br> <br>
+        <Label for="merk">Pilih Merk Mobil</Label>
+        <select name="merk" id="merk">
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="suzuka">Suzuka</option>
+        </select>
+
+        <br> <br>
+        <input type="radio" name="foods" id="drinks" value="Nasi Goreng">Nasi Goreng <br>
+        <input type="checkbox" name="drinks" id="drinks" value="Es Teh">Es Teh <br>
+    </form>
+</body>
+<script>
+    document.getElementById("demo").innerHTML = "Anton Kecap";
+</script>
+</html>

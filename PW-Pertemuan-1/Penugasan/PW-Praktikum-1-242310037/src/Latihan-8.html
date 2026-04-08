@@ -1,0 +1,162 @@
+<!-- Latihan 8 - Latihan Layout -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Layout</title>
+    <style>
+        body {
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            background-color: #ffffff;
+            max-width: 800px;
+            width: 100%;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            margin: 0 0 5px 0;
+            font-size: 28px;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .in-content {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .content-isinya {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .img-profile {
+            width: 120px;
+            border: 1px solid;
+        }
+
+        .footer-content {
+            background-color: #ecf0f1;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Frederico Steven Kwok</h1>
+            <p>Web Developer | Mahasiswa</p>
+        </div>
+        <div class="main-content">
+            <div class="in-content">
+                <h2>Tentang Saya</h2>
+                <div class="content-isinya">
+                    <p>Halo, Saya adalah seorang mahasiswa dari Institut Bisnis dan Informatika Kesatuan dengan program studi Teknologi Informasi. Saya memiliki minat besar dalam pengembangan web seperti di frontend dan backend, serta selalu semangat untuk mempelajari hal-hal baru di dunia IT.</p>
+                    <img src="https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="person" class="img-profile">
+                </div>
+            </div>
+            <div class="in-content">
+                <h2>Keahlian (Skills)</h2>
+                <ul>
+                    <li>Dasar Pemrograman (C++, Java, HTML, CSS, JS)</li>
+                    <li>Pengalaman Pengembangan Web Framework (Tailwindcss, React dan Next.JS)</li>
+                </ul>
+            </div>
+            <div class="in-content">
+                <h2>Riwayat Pendidikan</h2>
+                <table>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Institusi Pendidikan</th>
+                        <th>Kejurusan</th>
+                    </tr>
+                    <tr>
+                        <td>2024 - Sekarang</td>
+                        <td>Institut Bisnis dan Informatika Kesatuan</td>
+                        <td>S1 Teknologi Informasi</td>
+                    </tr>
+                    <tr>
+                        <td>2021 - 2024</td>
+                        <td>SMA Negeri 7 Kota Bogor</td>
+                        <td>Jurusan MIPA</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="in-content">
+                <h2>Kontak</h2>
+                <p>Terhubung melalui media sosial atau email:</p>
+                <a href="#" class="btn">Instagram</a>
+                <a href="#" target="_blank" class="btn">Github</a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <p>&copy; 2026 Frederico Steven Kwok 242310037 TI-24-PA</p>
+        </div>
+    </div>
+
+</body>
+</html>
