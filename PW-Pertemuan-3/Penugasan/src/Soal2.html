@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2</title>
+    <link rel="stylesheet" href="/src/css/Soal2.css">
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tr>
+                <td></td>
+                <td style="background-color: #b1b1b1;"><strong>Eksekutif</strong></td>
+                <td style="background-color: #b1b1b1;"><strong>Bisnis</strong></td>
+                <td style="background-color: #b1b1b1;"><strong>Ekonomi</strong></td>
+            </tr>
+            <tr>
+                <td style="background-color: #b1b1b1;"><strong>Jakarta</strong></td>
+                <td>70000</td>
+                <td>40000</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td style="background-color: #b1b1b1;"><strong>Solo</strong></td>
+                <td>80000</td>
+                <td>50000</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td style="background-color: #b1b1b1;"><strong>Surabaya</strong></td>
+                <td>90000</td>
+                <td>60000</td>
+                <td>30000</td>
+            </tr>
+        </table>
+
+        <div >
+            <div class="wrap-order-ticker-content">
+                <h1 class="header-order">Pemesanan Tiket</h1>
+                <form onsubmit="pemesananTiket(event)" class="form-ticket">
+                    <div class="input-layer">
+                        <label for="nama_pemesanan">Nama Pemesanan</label>
+                        <input type="text" id="nama_pemesanan" class="input-order" name="nama_pemesanan" placeholder="Tiket Bogor ke Surabaya" required>
+                    </div>
+                    <div class="input-layer">
+                        <label for="tujuan" style="margin-right: 70px;">Tujuan</label>
+                        <select name="tujuan" id="tujuan" class="input-order" required>
+                            <option value="">-- Tujuan Perjalanan --</option>
+                            <option value="jakarta">Jakarta</option>
+                            <option value="solo">Solo</option>
+                            <option value="surabaya">Surabaya</option>
+                        </select>
+                    </div>
+                    <div class="input-layer">
+                        <label for="kelas" style="margin-right: 78px;">Kelas</label>
+                        <select name="kelas" id="kelas" class="input-order" required>
+                            <option value="">-- Pilih Kelas --</option>
+                            <option value="eksekutif">Eksekutif</option>
+                            <option value="bisnis">Bisnis</option>
+                            <option value="ekonomi">Ekonomi</option>
+                        </select>
+                    </div>
+                    <div class="input-layer">
+                        <label for="banyak_tiket" style="margin-right: 28px">Banyak Tiket</label>
+                        <input type="number" id="banyak_tiket" name="banyak_tiket" class="input-order" placeholder="0" required>
+                    </div>
+                    <div class="input-layer">
+                        <label for="status_member" style="margin-right: 16px;">Status Member</label>
+                        <select name="status_member" id="status_member" class="input-order" required>
+                            <option value="">-- Pilih Member --</option>
+                            <option value="member">Member</option>
+                            <option value="non-member">Non-Member</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Pesan</button>
+                </form>
+            </div>
+            <div class="wrap-ticket-customer">
+                <h1>Tiket Travel Bintang Abadi</h1>
+                <div class="wrap-ticket-content">
+                    <div class="wrap-subticket-content">
+                        <div class="output-order">
+                            <p><strong>Nama Pemesanan:</strong> </p>
+                            <span id="out_nama" class="title-ticket"></span>
+                        </div>
+                        <div class="output-order">
+                            <p><strong>Tujuan Perjalanan:</strong> </p>
+                            <span id="out_tujuan" class="title-ticket"></span>
+                        </div>
+                        <div class="output-order">
+                            <p><strong>Kelas Tiket:</strong> </p>
+                            <span id="out_kelas" class="title-ticket"></span>
+                        </div>
+                        <div class="output-order">
+                            <p><strong>Jumlah Tiket:</strong> </p>
+                            <span id="out_jumlah" class="title-ticket"></span>
+                        </div>
+                        <div class="output-order">
+                            <p><strong>Status Member:</strong> </p>
+                            <span id="out_status" class="title-ticket"></span>
+                        </div>
+                    </div>
+                    <div class="wrap-subticket-content">
+                        <div class="output-order">
+                            <p><strong>Harga Tiket:</strong> </p>
+                            <span id="out_harga" class="title-ticket"></span>
+                        </div>
+                        <div class="output-order">
+                            <p><strong>Subtotal:</strong> </p>
+                            <span id="out_subtotal" class="title-ticket"></span>
+                        </div>
+                        <div class="output-order">
+                            <p><strong>Diskon:</strong> </p>
+                            <span id="out_diskon" class="title-ticket"></span>
+                        </div>
+                        <div class="output-order">
+                            <p><strong>Total Bayar:</strong> </p>
+                            <span id="out_total" class="title-ticket"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/js/Soal2.js"></script>
+</body>
+</html>

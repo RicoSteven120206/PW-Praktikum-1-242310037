@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(227, 242, 255);
+}
+
+.wrap-content {
+    margin-top: 50px;
+    display: flex;
+    width: 513px;
+    background-color: rgb(223, 219, 255);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 3px 15px 2px 4px;
+}
+
+.btn-tb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+.header {
+    font-weight: 900;
+}
+
+input {
+    border: none;
+    background-color: rgb(213, 255, 255);
+    border-radius: 4px;
+    height: 22px;
+    margin: 2px 0;
+}
+
+button {
+    width: 50%;
+    border-radius: 4px;
+    background-color: rgb(208, 252, 252);
+    border: none;
+    height: 25px;
+    box-shadow: 1px 1px 6px rgb(197, 205, 254);
+}
+
+button:hover {
+    background-color: rgb(184, 238, 238);
+}
+
+.btn-left {
+    margin-right: 20px;
+}

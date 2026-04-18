@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 4</title>
+    <link rel="stylesheet" href="/src/css/Soal4.css">
+</head>
+<body>
+    <div class="wrap-content">
+        <form onsubmit="hitungBunga(event)" class="form">
+            <h1 style="margin: 0;">Menghitung Saldo Akhir</h1>
+            <div class="content-input">
+                <label for="saldo" style="margin-right: 75px;">Saldo: </label>
+                <input type="number" id="saldo" nama="saldo" required>
+            </div>
+            <div class="content-input">
+                <label for="bunga" style="margin-right: 69px;">Bunga: </label>
+                <input type="number" id="bunga" nama="bunga" required>
+            </div>
+            <div class="content-input">
+                <label for="waktu" style="margin-right: 20px;">Waktu(Bulan):</label>
+                <input type="number" id="waktu" nama="waktu" required>
+            </div>
+            <button type="submit">Hitung Bunga</button>
+        </form>
+        <div class="form">
+            <h1 style="margin: 0;">Hasil</h1>
+            <div id="hasil" class=""></div>
+        </div>
+    </div>
+    <script src="/src/js/Soal4.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 3</title>
+    <link rel="stylesheet" href="/src/css/Soal3.css">
+</head>
+<body>
+    <div class="wrap-content">
+        <form onsubmit="resultFromN(event)" class="wrap-table">
+            <table border="1">
+                <tr>
+                    <td colspan="2" class="header">PERHITUNGAN FAKTORIAL DAN DERET</td>
+                    <td class="header">KETERANGAN</td>
+                </tr>
+                <tr>
+                    <td>N</td>
+                    <td><input type="number" id="input" placeholder="Input Number"></td>
+                    <td>Form Input Nilai</td>
+                </tr>
+                <tr>
+                    <td>Hasil</td>
+                    <td><span id="result"></span></td>
+                    <td>Hasil Dari Input</td>
+                </tr>
+                <tr>
+                    <td>Faktorial</td>
+                    <td><span id="factorial"></span></td>
+                    <td>Hasil Dari Factorial</td>
+                </tr>
+                <tr>
+                    <td>Jumlah</td>
+                    <td><span id="deret"></span></td>
+                    <td>Hasil Dari Jumlah Deret</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="btn-tb">
+                            <Button type="submit" class="btn-left">Submit</Button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="/src/js/Soal3.js"></script>
+</body>
+</html>

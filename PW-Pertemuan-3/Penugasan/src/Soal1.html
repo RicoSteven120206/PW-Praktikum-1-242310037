@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 1</title>
+    <link rel="stylesheet" href="/src/css/Soal1.css">
+</head>
+<body>
+    <div class="first-content">
+        <h1>Form Data Mahasiswa</h1>
+        <form onsubmit="tampilkanData(event)">
+            <label for="nim">NIM : </label> <br>
+            <input type="text" id="nim" name="nim" required> <br><br>
+
+            <label for="nama">Nama : </label> <br>
+            <input type="text" id="nama" name="nama" required> <br><br>
+
+            <label>Jenis Kelamin : </label> <br>
+            <input type="radio" name="jenis_kelamin" value="Laki-Laki" id="jenis_kelamin" required> Laki-Laki <br>
+            <input type="radio" name="jenis_kelamin" value="Perempuan" id="jenis_kelamin" required> Perempuan 
+            <br><br>
+
+            <label for="agama">Agama : </label> <br>
+            <select name="agama" id="agama" required>
+                <option value="">-- Pilih Agama --</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="KongHuCu">Kong Hu Cu</option>
+            </select> <br><br>
+
+            <label>Status : </label> <br>
+            <input type="radio" name="status" id="status" value="Belum Menikah" required> Belum Menikah <br>
+            <input type="radio" name="status" id="status" value="Sudah Menikah" required> Sudah Menikah 
+            <br><br>
+
+            <select name="jurusan" id="jurusan" required>
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="Teknologi Informasi">Teknologi Informasi</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Pariwisata">Pariwisata</option>
+            </select><br><br>
+            <label for="komentar">Komentar: </label><br>
+            <textarea name="komentar" id="komentar"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <h1>Data Mahasiswa</h1>
+        <p><strong>NIM:</strong> <span id="out_nim"></span></p>
+        <p><strong>Nama:</strong> <span id="out_nama"></span></p>
+        <p><strong>Jenis Kelamin:</strong> <span id="out_jenis_kelamin"></span></p>
+        <p><strong>Agama:</strong> <span id="out_agama"></span></p>
+        <p><strong>Status:</strong> <span id="out_status"></span></p>
+        <p><strong>Jurusan:</strong> <span id="out_jurusan"></span></p>
+        <p><strong>Komentar:</strong> <span id="out_komentar"></span></p>
+    </div>
+
+    <script src="/src/js/Soal1.js"></script>
+</body>
+</html>
